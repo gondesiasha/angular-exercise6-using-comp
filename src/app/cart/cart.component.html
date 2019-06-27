@@ -1,0 +1,15 @@
+<p>
+  cart works!
+</p>
+<table border="1" class=outerborder1 >
+  <tr>
+    <th>Cart</th>
+  </tr>
+  <tr *ngFor="let cartitems of arr1 let m=index">
+    <pre><td>           {{ cartitems.item}}
+      
+                               <button (click)="remove(cartitems,m)">Remove</button>
+         {{cartitems.price}}
+    </td></pre>
+  </tr>
+</table>

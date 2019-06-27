@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  </div>
+  <app-catelog  (data) ='orders=$event' (data1)='orders1=$event' ></app-catelog>
+  <!-- <app-catelog  (data1)='orders1=$event' ></app-catelog> -->
+ 
+  <app-cart  [arr1]='orders' [am]='orders1' (data3)='orders1=$event'></app-cart>
+  <app-checkout  [am]='orders1'></app-checkout>
+
+ 
+<router-outlet></router-outlet>

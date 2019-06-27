@@ -1,0 +1,17 @@
+<p>
+  catelog works!
+</p>
+<div>
+  <table border="1" class=outerborder >
+    <tr>
+      <th>Catelog</th>
+    </tr>
+    <tr *ngFor="let i of arr1 let n=index">
+      <pre><td>           {{ i.item}}
+        {{n}}
+                                 <button (click)="Add(i)">Add to Cart</button>
+           {{i.price}}
+      </td></pre>
+    </tr>
+  </table>
+
